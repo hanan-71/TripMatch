@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TripMatch - Find Your Perfect Trip</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h2>✈️ TripMatch</h2>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#guide">Tour Guide</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Find Your Perfect Trip</h1>
+
+            <p>
+                Tell us what you love, and we'll suggest a tour package
+                that matches your interests.
+            </p>
+
+            <a href="#guide" class="start-btn">
+                Start Exploring
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Preference Section -->
+    <section id="guide" class="guide">
+
+        <h2>🧳 Find Your Ideal Tour</h2>
+
+        <p class="subtitle">
+            Choose your preferences below
+        </p>
+
+
+        <!-- Travel Interest -->
+        <div class="question">
+
+            <h3>1. What type of trip do you prefer?</h3>
+
+            <div class="options">
+
+                <label>
+                    <input type="radio" name="interest" value="adventure">
+                    🏔️ Adventure
+                </label>
+
+                <label>
+                    <input type="radio" name="interest" value="beach">
+                    🏖️ Beach & Relaxation
+                </label>
+
+                <label>
+                    <input type="radio" name="interest" value="culture">
+                    🏛️ Culture
+                </label>
+
+                <label>
+                    <input type="radio" name="interest" value="nature">
+                    🌿 Nature
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- Budget -->
+        <div class="question">
+
+            <h3>2. What is your budget?</h3>
+
+            <div class="options">
+
+                <label>
+                    <input type="radio" name="budget" value="budget">
+                    💰 Budget
+                </label>
+
+                <label>
+                    <input type="radio" name="budget" value="medium">
+                    💳 Moderate
+                </label>
+
+                <label>
+                    <input type="radio" name="budget" value="luxury">
+                    💎 Luxury
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- Duration -->
+        <div class="question">
+
+            <h3>3. How long do you want to travel?</h3>
+
+            <select id="duration">
+
+                <option value="">Select duration</option>
+
+                <option value="short">
+                    2 - 3 Days
+                </option>
+
+                <option value="medium">
+                    4 - 6 Days
+                </option>
+
+                <option value="long">
+                    7+ Days
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Button -->
+        <button onclick="findTrip()">
+            🔍 Find My Trip
+        </button>
+
+
+        <!-- Result -->
+        <div id="result" class="result">
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <h2>About TripMatch</h2>
+
+        <p>
+            TripMatch is a simple tour package guide that helps travelers
+            discover destinations based on their interests, budget and
+            preferred travel duration.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 TripMatch | Tour Package Guide</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
